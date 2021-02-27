@@ -1,0 +1,339 @@
+/* Fonts */
+@font-face {
+  font-family: 'Commissioner';
+  src: url('../fonts/') format('woff2'),
+      url('../fonts/Commissioner-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Commissioner';
+  src: url('../fonts/Commissioner-Bold.woff2') format('woff2'),
+      url('../fonts/Commissioner-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Commissioner';
+  src: url('../fonts/Commissioner-Regular.woff2') format('woff2'),
+      url('../fonts/Commissioner-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* common style */
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #7A7A7A;
+  background-color: #F2F2F2;
+}
+.container{
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 48px;
+  border-radius: 8px;
+} 
+.container-mastercraft{
+  position: relative;
+}
+.container-mastercraft::before{
+  position: absolute;
+  content: "";
+  width: 56px;
+  height: 56px;
+
+  background-image: url("../images/logo-mastercraft.svg");
+} 
+/* SITE-HEADER */
+.hearder {
+  width: 100%;
+	background-image: url("/images/image-hero-desktop.jpg");
+	/* background-size: cover; */
+	height: 400px;
+}
+
+.header__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 165px;
+	height: 128px;
+}
+
+.header__nav_list {
+	list-style: none;
+	display: inline-block;
+}
+
+.header__nav__link {
+	text-decoration: none;
+	margin-left: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+	color: #FFFFFF;
+	outline: 0;
+	border-bottom: solid 1px transparent;
+	-webkit-transition: color .4s ease-out, border-bottom-color .4s ease-out;
+	-moz-transition: color .4s ease-out, border-bottom-color .4s ease-out;
+	-ms-transition: color .4s ease-out, border-bottom-color .4s ease-out;
+	-o-transition: color .4s ease-out, border-bottom-color .4s ease-out;
+	transition: color .4s ease-out, border-bottom-color .4s ease-out;
+  
+}
+
+.header__nav__link:hover {
+    border-bottom: solid 1px white;
+}
+.main-section{
+  position: relative;
+  bottom: 120px;
+}
+/* mastercraft */
+.monitor{
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 730px;
+  /* height: 220px;    */
+  padding: 60px 48px 50px;
+  text-align: center;
+  margin-bottom: 24px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  /* bottom: 120px; */
+}
+
+.monitor::before{
+  content: "";
+  background-image: url("../images/logo-mastercraft.svg");
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: -30px;
+  left: 337px;
+}
+
+.monitor-heading{
+  font-size: 1.7rem;
+}
+.monitor-paragraph{
+  color: #2F2F2F;
+}
+.monitor-items{
+  display: flex;
+  justify-content: space-between;
+}
+.monitor-links {
+  margin-top: 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.first-link{
+  background-color: #3CB3AB;
+  padding: 13px 47.5px;
+  color: #fff;
+}
+
+.second-link{
+  background-color: rgb(177,177,177,0.2);
+  color: #7A7A7A;
+  padding: 13px 30px 13px 70px ;
+  position: relative;
+}
+
+.second-link::before{
+  content: "";
+  background-image: url("../images/icon-bookmark.svg");
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.table-container{
+  background-color: #fff;
+}
+.table-section-list{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.table-section-li{
+  width: 33.33%;
+}
+.table-section-li + .table-section-li{
+  border-left: 1px solid rgb(0 0 0 / 0.15);
+  padding-left: 47px;
+}
+.table-section-li p{
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  font-size: 32px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+.line{
+  width: 634px;
+  height: 12px;
+  margin-top: 37px;
+  background: rgba(47, 47, 47 , 0.05);
+  border-radius: 33.5px;
+  position: relative;
+}
+
+.line::before{
+  display: block;
+  content: "";
+  position: absolute;
+  width: 496px;
+  height: 12px;
+  left: 0;
+  top: 0;
+  background-color: #3CB3AB;
+  border-radius: 33.5px;
+}
+
+
+/* SECTION ABOUT PROJECT */
+.container-about-project{
+  max-width: 730px;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 48px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.0497193);
+  border-radius: 8px;
+}
+.site-about-title{
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.site-about-text{
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.section{
+  margin-bottom: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 38px 32px 32px 32px;
+}
+.section-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.section-title h4{
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.section-title span{
+  padding: 0;
+  margin-top: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #3CB3AB;
+}
+.section-text{
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.section-select{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-select-tariff{
+  display: flex;
+  align-items: center;
+}
+.section-select-tariff p{
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 8px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.section-select-tariff span{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+}
+.section-select-button{
+  padding: 15px 32px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #3CB3AB;
+  border-radius: 33.5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;  
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.mahogany-section{
+  margin-bottom: 0;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+
+.not-allow {
+  cursor: not-allowed;
+}
+
+
+
+

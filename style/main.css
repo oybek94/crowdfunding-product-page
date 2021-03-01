@@ -261,7 +261,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   padding: 38px 32px 32px 32px;
-  transition: 1s;
+  /* transition: 1s; */
 }
 
 .section:hover {

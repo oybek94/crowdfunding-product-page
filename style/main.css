@@ -118,14 +118,12 @@ body {
   background-color: #fff;
   border-radius: 8px;
   max-width: 730px;
-  /* height: 220px;    */
   padding: 60px 48px 50px;
   text-align: center;
   margin-bottom: 24px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  /* bottom: 120px; */
 }
 
 .monitor::before{
@@ -154,15 +152,6 @@ body {
   border-radius: 50px;
   text-decoration: none;
   font-weight: 700;
-}
-.first-link{
-  background-color: #3CB3AB;
-  padding: 13px 47.5px;
-  color: #fff;
-}
-
-.first-link:hover {
-  background-color: #147A73;
 }
 
 .second-link{
@@ -318,7 +307,7 @@ body {
   font-size: 15px;
   line-height: 18px;
 }
-.section-select-button{
+.button{
   padding: 15px 32px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   background: #3CB3AB;
@@ -331,7 +320,7 @@ body {
   text-decoration: none;
 }
 
-.section-select-button:hover {
+.button:hover {
   background-color: #147A73;
 }
 

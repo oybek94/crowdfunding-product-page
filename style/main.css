@@ -1,26 +1,26 @@
 /* Fonts */
 @font-face {
-  font-family: 'Commissioner';
-  src: url('../fonts/') format('woff2'),
-      url('../fonts/Commissioner-Medium.woff') format('woff');
+  font-family: "Commissioner";
+  src: url("../fonts/") format("woff2"),
+      url("../fonts/Commissioner-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Commissioner';
-  src: url('../fonts/Commissioner-Bold.woff2') format('woff2'),
-      url('../fonts/Commissioner-Bold.woff') format('woff');
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner-Bold.woff2") format("woff2"),
+      url("../fonts/Commissioner-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Commissioner';
-  src: url('../fonts/Commissioner-Regular.woff2') format('woff2'),
-      url('../fonts/Commissioner-Regular.woff') format('woff');
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner-Regular.woff2") format("woff2"),
+      url("../fonts/Commissioner-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -37,7 +37,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Commissioner";
+  font-family: "Commissioner" , sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -78,6 +78,9 @@ body {
 	align-items: center;
 	padding: 0 165px;
 	height: 128px;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.0001) 100%);
+  mix-blend-mode: normal;
+  opacity: 0.6;
 }
 
 .header__nav_list {
@@ -137,9 +140,10 @@ body {
 
 .monitor-heading{
   font-size: 1.7rem;
+  color: #000000;
 }
 .monitor-paragraph{
-  color: #2F2F2F;
+  color: #7a7a7a;
 }
 .monitor-items{
   display: flex;
@@ -157,8 +161,12 @@ body {
   color: #fff;
 }
 
+.first-link:hover {
+  background-color: #147A73;
+}
+
 .second-link{
-  background-color: rgb(177,177,177,0.2);
+  background-color: rgb(47 47 47 / 0.05);
   color: #7A7A7A;
   padding: 13px 30px 13px 70px ;
   position: relative;
@@ -200,7 +208,6 @@ body {
   line-height: 39px;
   display: flex;
   align-items: center;
-
   color: #000000;
 }
 .line{
@@ -323,6 +330,11 @@ body {
   color: #FFFFFF;
   text-decoration: none;
 }
+
+.section-select-button:hover {
+  background-color: #147A73;
+}
+
 .mahogany-section{
   margin-bottom: 0;
   mix-blend-mode: normal;
@@ -332,6 +344,13 @@ body {
 
 .not-allow {
   cursor: not-allowed;
+  background-color: #2f2f2f;
+  opacity: 0.5;
+}
+
+.not-allow:hover {
+  background-color: #2f2f2f;
+  opacity: 0.5;
 }
 
 

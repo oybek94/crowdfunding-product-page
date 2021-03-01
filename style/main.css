@@ -78,9 +78,8 @@ body {
 	align-items: center;
 	padding: 0 165px;
 	height: 128px;
-  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background: linear-gradient(180deg, rgb(0 0 0 / 60%) 0%, rgba(0, 0, 0, 0.0001) 100%);
   mix-blend-mode: normal;
-  opacity: 0.6;
 }
 
 .header__nav_list {

@@ -97,7 +97,7 @@ body {
 	color: #FFFFFF;
 	outline: 0;
 	border-bottom: solid 1px transparent;
-	-webkit-transition: color .4s ease-out, border-bottom-color .4s ease-out;
+	-webkit-tran`sition: color .4s ease-out, border-bottom-color .4s ease-out;
 	-moz-transition: color .4s ease-out, border-bottom-color .4s ease-out;
 	-ms-transition: color .4s ease-out, border-bottom-color .4s ease-out;
 	-o-transition: color .4s ease-out, border-bottom-color .4s ease-out;
@@ -326,6 +326,8 @@ body {
   line-height: 18px;
 }
 .button{
+  display: flex;
+  align-items: center;
   padding: 15px 32px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   background: #3CB3AB;

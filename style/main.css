@@ -325,12 +325,12 @@ body {
   font-size: 15px;
   line-height: 18px;
 }
-.button{
+.button {
   display: flex;
   align-items: center;
   padding: 15px 32px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
   background: #3CB3AB;
+  border: 1px solid ;
   border-radius: 33.5px;
   font-style: normal;
   font-weight: bold;
